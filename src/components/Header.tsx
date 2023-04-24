@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { MobileMenu } from "../componentExports";
+import { MobileMenu } from "@components";
 
 const navItems = [
   { name: "About", href: "#" },
@@ -17,7 +17,7 @@ const Header = () => {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="#">
           <h1 className="font-bold text-3xl">Gabriela Cresta</h1>
           {/* Waiting for logo */}
           {/* <img
@@ -29,21 +29,18 @@ const Header = () => {
         <div className="flex md:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
+            className="inline-flex items-center justify-center rounded-md text-gray-900"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <Bars3Icon
-              className="h-6 w-6 hover:text-satin-linen"
-              aria-hidden="true"
-            />
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden md:flex md:gap-x-12">
+        <div className="hidden md:flex md:gap-x-8">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:bg-satin-linen px-4 rounded-lg"
             >
               {item.name}
             </a>
