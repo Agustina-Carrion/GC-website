@@ -46,12 +46,12 @@ const Header = () => {
             </a>
           ))}
         </div>
-      </nav>
-      <MobileMenu
+        <MobileMenu
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
         navItems={navItems}
       />
+      </nav>
     </header>
   );
 };

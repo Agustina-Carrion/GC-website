@@ -15,7 +15,7 @@ const MobileMenu: React.FC<Props> = ({
 }) => {
   return (
     <Dialog
-      as="nav"
+      as="div"
       className="md:hidden"
       open={mobileMenuOpen}
       onClose={setMobileMenuOpen}
