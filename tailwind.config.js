@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         current: "currentColor",
-        "mongoose": {
+        mongoose: {
           DEFAULT: "#B5A189",
           50: "#FCFBFA",
           100: "#F4F1ED",
